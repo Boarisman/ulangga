@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  border: 3px solid #333;
+  position: relative;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.token {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}
+
+.player {
+  background-color: blue;
+}
+
+.bot {
+  background-color: red;
+  left: 25px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
